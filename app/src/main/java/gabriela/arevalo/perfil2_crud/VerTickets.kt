@@ -1,7 +1,9 @@
 package gabriela.arevalo.perfil2_crud
 
 import RecyclerViewHelpers.Adaptador
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -29,6 +31,14 @@ class VerTickets : AppCompatActivity() {
         }
 
         val rcvTickets = findViewById<RecyclerView>(R.id.rcvTickets)
+        val imvAtras = findViewById<ImageView>(R.id.imvAtras)
+
+
+        imvAtras.setOnClickListener {
+            val atras = Intent(this, PaginaInicio::class.java)
+            startActivity(atras)
+        }
+
 
         rcvTickets.layoutManager = LinearLayoutManager(this)
 

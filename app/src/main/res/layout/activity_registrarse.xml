@@ -9,9 +9,9 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="412dp"
-        android:layout_height="307dp"
-        android:layout_marginBottom="424dp"
+        android:layout_width="458dp"
+        android:layout_height="321dp"
+        android:layout_marginBottom="492dp"
         android:background="@drawable/fondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -22,59 +22,62 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="casual"
         android:text="Registrarse"
-        android:textSize="24sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtCorreo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:fontFamily="casual"
         android:hint="Correo"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/txtContrasena"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtContrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="36dp"
         android:ems="10"
         android:fontFamily="casual"
         android:hint="Contraseña"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistrarse"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="48dp"
         android:fontFamily="casual"
         android:text="¿Ya tienes cuenta?"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txtIniciaSesion"
-        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnRegistrarse"
         android:layout_width="152dp"
         android:layout_height="62dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="44dp"
         android:backgroundTint="#3285C6"
         android:fontFamily="casual"
         android:text="Registrarse"
@@ -88,8 +91,8 @@
         android:id="@+id/txtIniciaSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="48dp"
         android:fontFamily="casual"
         android:text="Inicia Sesión"
         android:textSize="20sp"

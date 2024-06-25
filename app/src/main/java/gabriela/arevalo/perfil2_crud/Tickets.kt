@@ -1,7 +1,9 @@
 package gabriela.arevalo.perfil2_crud
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -37,6 +39,13 @@ class Tickets : AppCompatActivity() {
         val txtTelefonoR = findViewById<TextView>(R.id.txtTelefonoR)
         val txtUbicaciont = findViewById<TextView>(R.id.txtUbicaciont)
         val txtEstadot = findViewById<TextView>(R.id.txtEstadot)
+        val imvAtras = findViewById<ImageView>(R.id.imvAtras)
+
+
+        imvAtras.setOnClickListener {
+            val atras = Intent(this, VerTickets::class.java)
+            startActivity(atras)
+        }
 
         txtUUID.text = uuid
         txtTitulo.text = titulo

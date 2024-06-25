@@ -108,14 +108,14 @@ class Adaptador(var Datos: List<tickets>):RecyclerView.Adapter<ViewHolder>() {
             val context = holder.itemView.context
 
             val builder = AlertDialog.Builder(context)
-            builder.setTitle("Actualizar")
+            builder.setTitle("Actualizar Estado")
 
             val cuadroTexto = EditText(context)
             cuadroTexto.setHint(producto.EstadoTicket)
             builder.setView(cuadroTexto)
 
 
-            builder.setPositiveButton("Actualizar"){
+            builder.setPositiveButton("Confirmar"){
                     dialog, wich ->
                 editarProducto(cuadroTexto.text.toString(), producto.UUID_NumeroTicket)
             }

@@ -2,9 +2,11 @@ package gabriela.arevalo.perfil2_crud
 
 import RecyclerViewHelpers.Adaptador
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -37,6 +39,13 @@ class CrearTicket : AppCompatActivity() {
         val txtUbicacion = findViewById<EditText>(R.id.txtUbicacion)
         val txtEstadoTicket = findViewById<EditText>(R.id.txtEstadoTicket)
         val btnAgregar = findViewById<Button>(R.id.btnAgregar)
+        val imvAtras = findViewById<ImageView>(R.id.imvAtras)
+
+
+        imvAtras.setOnClickListener {
+            val atras = Intent(this, PaginaInicio::class.java)
+            startActivity(atras)
+        }
 
 
         btnAgregar.setOnClickListener {

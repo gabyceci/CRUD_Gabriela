@@ -128,7 +128,7 @@ class Adaptador(var Datos: List<tickets>):RecyclerView.Adapter<ViewHolder>() {
 
         }
 
-       
+
 
         holder.itemView.setOnClickListener {
             val context = holder.itemView.context

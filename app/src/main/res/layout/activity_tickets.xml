@@ -15,12 +15,14 @@
         android:fontFamily="casual"
         android:text="Ticket"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtUUID"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtUUID"
@@ -118,10 +120,13 @@
         android:id="@+id/txtEstadot"
         android:layout_width="105dp"
         android:layout_height="29dp"
+        android:layout_marginBottom="68dp"
         android:fontFamily="casual"
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="284dp"
-        tools:layout_editor_absoluteY="681dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
